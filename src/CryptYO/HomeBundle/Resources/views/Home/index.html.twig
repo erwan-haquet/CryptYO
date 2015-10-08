@@ -15,11 +15,21 @@
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <button class="btn btn-danger btn-inscr">S'inscrire</button>
+                    <a href="register"> <button class="btn btn-danger btn-inscr">S'inscrire</button> </a>
                 </div>
 
-                <div class="col-md-4">
-                    <p>Form connexion</p>
+                <div class="col-md-4 home__form">
+                    <form action="{{ path("fos_user_security_check") }}" method="post">
+                        <input type="hidden" name="_csrf_token" value="{{ fos_csrf_provider.generateCsrfToken('authenticate') }}" />
+                        <label>Nom d'utilisateur :</label>
+                        <input type="text" name="_username" required="required" />
+
+                        <label>Mot de passe :</label>
+                        <input type="password" name="_password" required="required" />
+
+                        <br/>
+                        <button type="submit">Se connecter</button>
+                    </form>
                 </div>
             </div>
 
@@ -65,9 +75,13 @@
                 </div>
 
                 <div class="col-md-4">
-                        COUCO
-                    </div>
+
+                    COUCO
                 </div>
+
+
+
+            </div>
 
 
             </div>

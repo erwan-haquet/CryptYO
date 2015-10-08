@@ -1,3 +1,3 @@
 crypt_yo_home_homepage:
-    path:     /home
+    path:     /
     defaults: { _controller: CryptYOHomeBundle:Home:index }

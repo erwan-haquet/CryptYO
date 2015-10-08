@@ -1,12 +1,18 @@
 .banniere {
-    height: 80px;
+    min-height:80px;
     background-color: #51626F;
     margin-bottom: 20px;
-    color: white
+    padding-top: 10px;
+    color: whitesmoke;
 }
 
 .btn-inscr {
     margin-top: 22px;
     padding-left: 50px!important;
     padding-right: 50px;
+}
+
+.home__form {
+    text-align: right;
+    color: black;
 }
