@@ -1,9 +1,9 @@
 .banniere {
     min-height:80px;
-    background-color: #51626F;
+    background-color: #81B3CC;
     margin-bottom: 20px;
     padding-top: 10px;
-    color: whitesmoke;
+    color: white;
 }
 
 .btn-inscr {
@@ -15,4 +15,37 @@
 .home__form {
     text-align: right;
     color: black;
+    padding-right: 50px;
+}
+.header__logo {
+    width: 80px;
+    margin-top: 2px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+@font-face {
+    font-family: 'logo__font';
+    src: url('../fonts/logo__header.ttf');
+}
+.logo {
+    font-family: 'logo__font', 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.banniere input {
+    background-color: white!important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding-left: 5px;
+}
+.banniere .home__form label {
+    color: white;
+}
+.banniere .home__form button{
+    width: 187px;
 }
