@@ -1,42 +1,10 @@
-<!DOCTYPE>
-<html>
+{% extends 'CryptYOHomeBundle::base.html.twig' %}
 
-    <head>
-        <Title>CryptYO</Title>
-        <link href="{{ asset('bundles/cryptyohome/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('bundles/cryptyohome/css/main.css') }}" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    </head>
+{% block title %}Bienvenue sur Crypt Your Octet{% endblock %}
 
-    <body>
+{% block body %}
 
-    <div class="row banniere">
-
-        <div class="col-md-4 logo">
-            <img class="header__logo" src="{{ asset('bundles/cryptyohome/images/cryptyo1.png') }}" alt="...">
-            <h1> Crypt Your Octet </h1>
-        </div>
-
-        <div class="col-md-4 text-center">
-            <a href="register"> <button class="btn btn-danger btn-inscr">S'inscrire</button> </a>
-        </div>
-
-        <div class="col-md-4 home__form">
-            <form action="{{ path("fos_user_security_check") }}" method="post">
-                <input type="hidden" name="_csrf_token" value="{{ fos_csrf_provider.generateCsrfToken('authenticate') }}" />
-                <label>Nom d'utilisateur :</label>
-                <input type="text" name="_username" required="required" /></br>
-
-                <label>Mot de passe :</label>
-                <input type="password" name="_password" required="required" style="margin-right: -3px"/>
-
-                <br/>
-                <button type="submit">Se connecter</button>
-            </form>
-        </div>
-    </div>
-
-        <div class="container">
+    <div class="container">
 
             <div class="row">
 
@@ -89,14 +57,7 @@
             </div>
 
 
-            </div>
-
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="{{ asset('bundles/cryptyohome/js/bootstrap.min.js') }}"></script>
+{% endblock %}
 
-    </body>
-
-
-</html>
